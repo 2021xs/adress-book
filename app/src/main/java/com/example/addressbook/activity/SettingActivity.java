@@ -155,6 +155,7 @@ public class SettingActivity extends AppCompatActivity {
 
     // 导出联系人信息
     private void exportContacts() {
+        //查询
         List<People> peopleList = LitePal.findAll(People.class);
         //设置将要创建的文件信息
         ContentValues values = new ContentValues();

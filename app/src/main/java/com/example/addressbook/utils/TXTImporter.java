@@ -24,6 +24,7 @@ public class TXTImporter {
 
     private final Random random = new Random();
 
+    //使用文件输入流在指定文件地址读出数据
     public void importFromTXT(ContentResolver contentResolver, Uri uri) {
         try (InputStream inputStream = contentResolver.openInputStream(uri);
              BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream))) {
